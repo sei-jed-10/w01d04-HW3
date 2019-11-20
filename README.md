@@ -10,41 +10,84 @@
 Create a function that will get the sum of the numbers between 1 and n and return the answer
 
 ```
-summation(5) // should return 15 because 1+2+3+4+5=15
+  function sum(n){
+    var summation = 0;
+    for (var i = 0; i <= n; i++) {
+      summation += i;
+   }
+     console.log(summation)
+  }
+ sum(5);
+
+
+
+
 ```
 
 #### Exercise 2:
 Create a program to get the sum of all the even numbers in a group
 
-```
- summationEven(5) // should return 6 because 2+4=6
-```
 
- 
+function sum(n){
+      var summation = 0;
+   for (i =1 ; i <=n ; i++) {
+     if (i % 2 === 0);{
+      summation += i;
+     }
+     return summation;
+  }
+ console.log();
+sum(5);
+
+
 
 #### Exercise 3:  
 Write a function that will tell you all of the words in an array that contain the letter `a`
 
 ```
- wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
+ // wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
 ```
-
+function wordsWithA(ward){
+  
+  var res= [];
+  for(i=0 ; ward[i].indexOf('a')>=0 ;i++ ) {
+    res += ward[i] + " ";
+      }
+  return res;
+  
+}
+console.log(wordsWithA(['cat', 'rabbit', 'dog', 'frog']));
  
+
+
 #### Exercise 4: 
 Create a function to reverse the letters in a word
 
+
 ```
-reverse("caterpillar") // should return "rallipretac"
-```
+function reverse(word){
+  return word.split("").reverse().join("");
+  };
+  
+console.log(reverse("caterpillar"))
 
 
 
 #### Exercise 5:
  Create a function that takes an array of words and combines them with a dash
 
-  ```
-  addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
-  ```
+  
+  const addDashes=['test1', 'test2', 'test3']
+ console.log(addDashes.join())
+ console.log(addDashes.join(''))
+ console.log(addDashes.join('-'))
+
+ 
+
+
+
+
+
  ## Extra Practice Optional 6,7,8,9,10,11 
 #### Exercise 6:
 Function that will count up to a number and back down and return a string of the climb
