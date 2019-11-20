@@ -25,7 +25,7 @@ function summationEven(number){
     return sum;
 }
 
-console.log(summationEven(5));
+console.log(summationEven(5)); //should return 6 because 2+4=6
 
 //----------------------------------------------------------------------------------------------------
 
