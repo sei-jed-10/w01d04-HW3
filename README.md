@@ -11,6 +11,7 @@ Create a function that will get the sum of the numbers between 1 and n and retur
 
 ```
 summation(5) // should return 15 because 1+2+3+4+5=15
+
 ```
 
 #### Exercise 2:
@@ -119,3 +120,4 @@ guessLetter('T'); // "You Win, G O A T"
 - What was a challenge you had with this assignment?
 - Is there anything that you'd like some further information on?
 - Do you have any suggestions to improve this assignment?
+
