@@ -10,14 +10,41 @@
 Create a function that will get the sum of the numbers between 1 and n and return the answer
 
 ```
-summation(5) // should return 15 because 1+2+3+4+5=15
+function summation(num){
+  
+  var res= 0;
+  for(i=1; i<=num;i++ ) {
+    
+    res += i;
+    
+      }
+  return res;
+  
+}
+
+console.log(summation(5));
+
 ```
 
 #### Exercise 2:
 Create a program to get the sum of all the even numbers in a group
 
 ```
- summationEven(5) // should return 6 because 2+4=6
+ function summation(num){
+  
+  var res= 0;
+  for(i=1; i<=num;i++ ) {
+    if(i%2==0)
+    res += i;
+    
+      }
+  return res;
+  
+}
+
+console.log(summation(5));
+
+
 ```
 
  
@@ -26,7 +53,22 @@ Create a program to get the sum of all the even numbers in a group
 Write a function that will tell you all of the words in an array that contain the letter `a`
 
 ```
- wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
+ 
+function wordsWithA(arr){
+  
+  var res= [];
+  for(i=0 ; arr[i].indexOf('a')>=0 ;i++ ) {
+    res += arr[i] + " ";
+      }
+  return res;
+  
+}
+
+console.log(wordsWithA(['cat', 'rabbit', 'dog', 'frog']));
+
+
+
+
 ```
 
  
@@ -34,7 +76,14 @@ Write a function that will tell you all of the words in an array that contain th
 Create a function to reverse the letters in a word
 
 ```
-reverse("caterpillar") // should return "rallipretac"
+
+function reverse(wor){
+  
+  return wor.split('').reverse().join('');
+  
+}
+
+console.log(reverse("caterpillar"));
 ```
 
 
@@ -43,42 +92,134 @@ reverse("caterpillar") // should return "rallipretac"
  Create a function that takes an array of words and combines them with a dash
 
   ```
-  addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
+  
+function addDashes(arr){
+  
+   var res= "";
+  for(i=0 ; i< arr.length ;i++ ) {
+    
+    res += arr[i]+ "-";
+    
+      }
+  return res;
+}
+
+console.log(addDashes(['test1', 'test2', 'test3']));
   ```
  ## Extra Practice Optional 6,7,8,9,10,11 
+
 #### Exercise 6:
 Function that will count up to a number and back down and return a string of the climb
 
 ```
- countUpAndDown(3) // should return "1 2 3 2 1"
+  function countUpAndDown(num){
+var res = [];
+for(i=1 ; i<= num ;i++ ) {
+   res.push(i)
+}
+     for(i=num-1 ;i>= 1 ;i-- ) {
+      res.push(i)
+          }
+   
+return res;
+}
+console.log(countUpAndDown(3));
+
+
 ```
 
 #### Exercise 7:
 Create a function to get the average of a group of numbers 
 
 ```
-  avg([8, 2, 2, 4]) // should return 4
+  function avg(arr){
+  
+   var res= 0;
+  for(i=0 ; i< arr.length ;i++ ) {
+    
+    res += arr[i];
+    
+      }
+  return res/arr.length;
+}
+
+console.log(avg([8, 6, 2, 4]));
  ```
 
 #### Exercise 8: 
 Write a function that will tell you all of the words in an array that contain a specified letter
 
 ```
- wordsWithLetter("g", ['cat', 'rabbit', 'dog', 'frog']) // should return ['dog', 'frog']
+  
+function wordsWithLetter(lett,arr){
+  
+  var res= [];
+  for(i=0 ; arr[i].indexOf(lett)>=0 ;i++ ) {
+    res.push(arr[i]);
+      }
+  return res;
+  
+}
+
+console.log(wordsWithLetter('t', ['cat', 'rabbit', 'dog', 'frog']));
+ 
+// should return ['dog', 'frog']
+
 ```
 
 #### Exercise 9: 
 Function that returns the longest word in sentence
 
  ```
-longestWord("The cat in the house") // should return "house"
+
+function longestWord(w){ 
+
+ // var res= [];
+
+  var res = w.split('');
+   for(i=0 ; i<res.length ;i++ ) {
+     if(res[i].length>=5)
+        return res[i]
+       }
+  // return res;
+  
+ }
+console.log(res[i].length);
+console.log(longestWord("The cat in the house"));
+ 
+
+}
 ```
 #### Exercise 10: 
 Function that returns the largest even number
 
 ```
- largestEvenNumber([1,2,3,10,4,7,0]) // should return "10"
+ function largestEvenNumber(num){
+   
+  var res = 0;
+  var ev = [];
+    for(i=0 ; i<num.length ;i++ ) {
+     if(num[i]%2 ==0){
+       ev.push(num[i]);       
+     }
+ 
+       }
+  ev.sort();
+  console.log(ev);
+  
+  for (i=0 ; i<ev.length ;i++){
+    if(ev[i]> ev[i+1])     
+      res=ev[i]
+  }
+  return res;
+}
+
+console.log(largestEvenNumber([1,2,3,10,4,7,0]));
+
+
 ```
+
+
 
 ## BONUS
 
