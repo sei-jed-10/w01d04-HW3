@@ -42,7 +42,7 @@ Create a function to reverse the letters in a word
 reverse("caterpillar") // should return "rallipretac"
 ```
 
-## Extra PracticeOptional 6,7,8,9,10,11
+## Extra Practice Optional 6,7,8,9,10,11
 
 #### Exercise 6:
  Create a function that takes an array of words and combines them with a dash
