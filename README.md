@@ -28,11 +28,12 @@ Create a program to get the sum of all the even numbers in a group
 ```   
 
 #### Exercise 4:  
-Create a function to get the average of a group of numbers 
+Write a function that will tell you all of the words in an array that contain the letter `a`
 
 ```
-  avg([8, 2, 2, 4]) // should return 4
- ```
+ wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
+```
+
  
 #### Exercise 5: 
 Create a function to reverse the letters in a word
@@ -40,6 +41,8 @@ Create a function to reverse the letters in a word
 ```
 reverse("caterpillar") // should return "rallipretac"
 ```
+
+## Extra PracticeOptional 6,7,8,9,10,11
 
 #### Exercise 6:
  Create a function that takes an array of words and combines them with a dash
@@ -56,11 +59,12 @@ Function that will count up to a number and back down and return a string of the
 ```
 
 #### Exercise 8:
-Write a function that will tell you all of the words in an array that contain the letter `a`
+Create a function to get the average of a group of numbers 
 
 ```
- wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
-```
+  avg([8, 2, 2, 4]) // should return 4
+ ```
+
 #### Exercise 9: 
 Write a function that will tell you all of the words in an array that contain a specified letter
 
@@ -81,7 +85,7 @@ Function that returns the largest even number
  largestEvenNumber([1,2,3,10,4,7,0]) // should return "10"
 ```
 
-## Extra Practice
+## BONUS
 
 Create word guessing game where the user gets infinite tries to guess the word (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).
 
