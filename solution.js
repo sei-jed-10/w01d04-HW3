@@ -55,7 +55,7 @@ function wordsWithA(words){
     }
     return array;
   };
-   wordsWithA(['cat', 'rabbit', 'dog', 'frog']);
+wordsWithA(['cat', 'rabbit', 'dog', 'frog']);
 
 
 ////// Exercise 5:
@@ -65,5 +65,15 @@ function reverse(word){
     reverse("hello");
 
 
-/////////////////////END OF SOLUTION
+////// Exercise 5 (new):
+function addDashes(array){
+    var string = '';
+    for(i=0;i<array.length;i++){
+      string += array[i] +"-";
+    }
+  string = string.slice(0,-1);
+  return string
+  };
+  addDashes(["cat","dog","camel","zebra"]);
 
+/////////////////////END OF SOLUTION
