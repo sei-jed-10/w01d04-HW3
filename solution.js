@@ -10,6 +10,8 @@ function summation(number){
 }
 console.log(summation(5));
 
+//----------------------------------------------------------------------------------------------------
+
 //Exercise 2:
 //Create a program to get the sum of all the even numbers in a group
 
@@ -25,6 +27,8 @@ function summationEven(number){
 
 console.log(summationEven(5));
 
+//----------------------------------------------------------------------------------------------------
+
 //Exercise 3:
 //Write a function that will tell you all of the words in an array that contain the letter a
 function wordsWithA(list){
@@ -39,6 +43,8 @@ function wordsWithA(list){
 
  console.log(wordsWithA(['cat', 'rabbit', 'dog', 'frog'])) // should return ['cat', 'rabbit']
 
+//----------------------------------------------------------------------------------------------------
+
 //Exercise 4:
 //Create a function to reverse the letters in a word
 function reverse(word){
@@ -50,6 +56,8 @@ function reverse(word){
 }
 
 console.log(reverse("caterpillar")) // should return "rallipretac"
+
+//----------------------------------------------------------------------------------------------------
 
 //Exercise 5:
 //Create a function that takes an array of words and combines them with a dash
@@ -68,6 +76,7 @@ function addDashes(arrayOfWords){
 
 console.log(addDashes(['test1', 'test2', 'test3'])) // should return "test1-test2-test3"
 
+//----------------------------------------------------------------------------------------------------
 
 //Exercise 6:
 //Function that will count up to a number and back down and return a string of the climb
@@ -83,6 +92,8 @@ function countUpAndDown(number){
 }
  console.log(countUpAndDown(3)) // should return "1 2 3 2 1"
 
+//----------------------------------------------------------------------------------------------------
+
 //Exercise 7:
 //Create a function to get the average of a group of numbers
 function avg(listOfNumbers){
@@ -94,6 +105,8 @@ function avg(listOfNumbers){
     return average;
 }
   console.log(avg([8, 2, 2, 4])) // should return 4
+
+//----------------------------------------------------------------------------------------------------
 
 //Exercise 8:
 //Write a function that will tell you all of the words in an array that contain a specified letter
@@ -108,6 +121,7 @@ function wordsWithLetter(letter,list){
 }
  console.log(wordsWithLetter("g", ['cat', 'rabbit', 'dog', 'frog'])) // should return ['dog', 'frog']
 
+//----------------------------------------------------------------------------------------------------
 
 //Exercise 9:
 //Function that returns the longest word in sentence
@@ -124,6 +138,7 @@ function longestWord(sentence){
 
 console.log(longestWord("The cat in the house")) // should return "house"
 
+//----------------------------------------------------------------------------------------------------
 
 //Exercise 10:
 //Function that returns the largest even number
@@ -140,4 +155,75 @@ function largestEvenNumber(listOfNumbers){
     return max;
 }
  console.log(largestEvenNumber([1,2,3,10,4,7,0])) // should return "10"
+ 
+//----------------------------------------------------------------------------------------------------
+
+//Bonus
+const wordLetters     = ['G', 'O', 'A', 'T'];
+const guessedLetters  = ['_', '_', '_', '_'];
+var numberOfGuesses=0;
+var listOfGuessedLetters;
+var numberOfWrongGuesses=0;
+
+function guessLetter(letter){
+  var found=false;
+  for (i=0;i<wordLetters.length;i++){
+    if(wordLetters[i]==letter){
+      found=true;
+    break;
+    } 
+  }
+  if(found){
+      guessedLetters[i]=wordLetters[i];
+
+      var isEqual=checkForEquality();
+      if(isEqual){
+        console.log("You Win, "+printGuessedLetters());
+      }
+      else{
+      console.log("Correct, "+printGuessedLetters());
+      }
+      numberOfGuesses+=1;
+  }
+    else{
+      console.log("Inorrect, "+printGuessedLetters());
+      numberOfGuesses+=1;
+      numberOfWrongGuesses+=1;
+      if(numberOfWrongGuesses>=6){
+        console.log("Game Over!")
+      }
+    }
+}
+
+function checkForEquality(){
+  for(i=0;i<wordLetters.length;i++){
+    if(!(guessedLetters[i]==wordLetters[i])){
+      return false;
+    }
+  }
+  return true;
+}
+
+function printGuessedLetters(){
+  var guessedLettersString="";
+  for(i=0;i<guessedLetters.length;i++){
+    guessedLettersString+=guessedLetters[i]+" ";
+  }
+return guessedLettersString;
+}
+
+
+// playing the game
+
+guessLetter('G'); // "Correct, G _ _ _"
+guessLetter('I'); // "Incorrect, G _ _ _"
+guessLetter('O'); // "Correct, G O _ _"
+guessLetter('A'); // "Correct, G O A _"
+guessLetter('L'); // "Incorrect, G O A _"
+guessLetter('T'); // "You Win, G O A T"
+
+
+
+
+
 
