@@ -1,0 +1,33 @@
+Exercise 4: 
+Create a function to reverse the letters in a word
+
+```
+reverse("caterpillar") // should return "rallipretac"
+```
+//
+function reverse(letters){
+  return letters.split('').reverse().join('');
+  
+}
+console.log(reverse("caterpillar"));
+
+
+Exercise 8: 
+Write a function that will tell you all of the words in an array that contain a specified letter
+
+```
+ wordsWithLetter("g", ['cat', 'rabbit', 'dog', 'frog']) // should return ['dog', 'frog']
+```
+//
+var wordsEithLetter=['cat','rabbit','dog','frog']
+console.log(wordWithLetter[2]);
+console.log(wordWithLetter[3]);
+
+10: 
+Function that returns the largest even number
+
+```
+ largestEvenNumber([1,2,3,10,4,7,0]) // should return "10"
+```
+//
+console.log(Math.max(1,2,3,10,4,7,0));
