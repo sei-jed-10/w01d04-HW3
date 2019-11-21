@@ -38,8 +38,7 @@ summation(5)
 Solution 3:
 Write a function that will tell you all of the words in an array that contain the letter a
 
- wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
-
+ 
   
 var startA = ['cat', 'rabbit', 'dog', 'frog'] 
 
@@ -47,7 +46,7 @@ function findingA()
 
 {
   
-  for (i = 0; i < startA; i++)
+  for (i = 0; i < startA.length; i++)
   {
     var word = startA[i].includes("a")
     if(word == true)
@@ -87,14 +86,15 @@ reverse("caterpillar")
 Solution 5:
 Create a function that takes an array of words and combines them with a dash
 
-addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
+//addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
+
 
 var text = ["Blue","Purple","Black","Pink"]
 
 function comb()
 
 {
-    console.log(text.toString())
+    console.log(text[0] + "-" + text[1] + "-" +text[2] + "-" +text[3])
     
 }
 comb()
