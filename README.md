@@ -28,6 +28,11 @@ Write a function that will tell you all of the words in an array that contain th
 ```
  wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
 ```
+var wordsWithA=['cat','rabbit', 'dog', 'frog']
+console.log(wordsWithA[0]);
+console.log(wordsWithA[1]);
+
+
 
  
 #### Exercise 4: 
@@ -36,6 +41,13 @@ Create a function to reverse the letters in a word
 ```
 reverse("caterpillar") // should return "rallipretac"
 ```
+
+function reverse(letters){
+  
+  return letters.split('').reverse().join('');
+  
+}
+  console.log(reverse("caterpillar"));
 
 
 
@@ -66,6 +78,10 @@ Write a function that will tell you all of the words in an array that contain a 
 ```
  wordsWithLetter("g", ['cat', 'rabbit', 'dog', 'frog']) // should return ['dog', 'frog']
 ```
+//solution
+var wordsWithLetter=['cat','rabbit', 'dog', 'frog']
+console.log(wordsWithLetter[2]);
+console.log(wordsWithLetter[3]);
 
 #### Exercise 9: 
 Function that returns the longest word in sentence
@@ -78,8 +94,11 @@ Function that returns the largest even number
 
 ```
  largestEvenNumber([1,2,3,10,4,7,0]) // should return "10"
+
 ```
 
+
+console.log(Math.max(1,2,3,10,4,7,0));
 ## BONUS
 
 Create word guessing game where the user gets infinite tries to guess the word (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).
