@@ -17,7 +17,7 @@ summation(5) // should return 15 because 1+2+3+4+5=15
 Create a program to get the sum of all the even numbers in a group
 
 ```
- summationEven(5) // should return 6 because 2+4=6
+ summationEven(5) // should return 6 because 2+4+6+8
 ```
 
  
