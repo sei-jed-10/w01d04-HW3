@@ -9,14 +9,35 @@
 #### Exercise 1:
 Create a function that will get the sum of the numbers between 1 and n and return the answer
 
-```
+```js
+var sum = 0;
+function summation(num){
+  for(var i = 1;i <= num;i++){
+    sum += i; 
+
+  }
+  console.log(sum)
+}
 summation(5) // should return 15 because 1+2+3+4+5=15
 ```
 
 #### Exercise 2:
 Create a program to get the sum of all the even numbers in a group
 
-```
+```js
+var sum = 0;
+function summationEven(num){
+
+  for(var i = 1; i <= num;i++){
+  
+   if(i % 2 === 0){
+
+    sum += i;
+    
+    }
+  }
+  console.log(sum);
+}
  summationEven(5) // should return 6 because 2+4=6
 ```
 
@@ -25,7 +46,19 @@ Create a program to get the sum of all the even numbers in a group
 #### Exercise 3:  
 Write a function that will tell you all of the words in an array that contain the letter `a`
 
-```
+```js
+var aray = [];
+
+var letter = 'a'
+function wordsWithA(array){
+        
+    return array.filter(array => array.indexOf(letter) > -1);
+     
+    console.log(wordsWithA(array.indexOf(letter) > -1));
+}
+
+
+
  wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
 ```
 
@@ -33,7 +66,13 @@ Write a function that will tell you all of the words in an array that contain th
 #### Exercise 4: 
 Create a function to reverse the letters in a word
 
-```
+```js
+var str;
+function reverse(str){
+  
+  return str.split('').reverse().join()
+
+}
 reverse("caterpillar") // should return "rallipretac"
 ```
 
@@ -42,14 +81,32 @@ reverse("caterpillar") // should return "rallipretac"
 #### Exercise 5:
  Create a function that takes an array of words and combines them with a dash
 
-  ```
+  ```js
+  var array;
+
+  function addDashes(array){
+   
+    console.log(array.join('-'))
+
+  }
   addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
   ```
  ## Extra Practice Optional 6,7,8,9,10,11 
 #### Exercise 6:
 Function that will count up to a number and back down and return a string of the climb
 
-```
+```js
+var num;
+function countUpAndDown(num){
+
+  for(var i = 1;i <= num;i++){
+  console.log(i);
+  }
+  for(var i = num-1;i >= 1;i--){
+  console.log(i);
+  }
+
+}
  countUpAndDown(3) // should return "1 2 3 2 1"
 ```
 
