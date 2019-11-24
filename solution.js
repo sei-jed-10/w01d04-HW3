@@ -30,20 +30,35 @@ console.log(sum)
 
 sum1(5)
 
- 
+ //Write a function that will tell you all of the words in an array that contain the letter `a`
+ let frist ,second;
 function wordsWithA(){
+    
     let  word = ['cat', 'rabbit', 'dog', 'frog'] 
     for(let i=0;i<word.length;i++){ 
+        let char='a';
+        if( word[i].includes(char)==true)  {
+          
+           
+           frist=word[i];
+           second=word[i+1];
+         return  [frist,second ];
+
+        } 
+
+    }
+
+   /* for(let i=0;i<word.length;i++){ 
     if(word[i].charAt(1)===word[i].charAt(1))
         console.log( word);
     
-     }
+     }*/
     
     
     }
      
     
-    wordsWithA()
+    console.log(wordsWithA());
 
 //```Create a function to reverse the letters in a word
 //reverse("caterpillar") // should return "rallipretac"
@@ -67,10 +82,10 @@ function reverse1(word) {
   
 function addDashes(){
     let word=['test1', 'test2', 'test3']
-   
-         
-            return word;
-   
+           //word[0]= word[0]+"-";
+           //word[1]= word[1]+"-";
+            return  word.join('-');
+            
    
     }
     console.log(addDashes())
