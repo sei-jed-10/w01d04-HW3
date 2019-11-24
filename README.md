@@ -13,12 +13,35 @@ Create a function that will get the sum of the numbers between 1 and n and retur
 summation(5) // should return 15 because 1+2+3+4+5=15
 ```
 
+function summation(number){
+    let num = number;
+    let sum = 0;
+    for(var i = 1; i <= num; i++){
+      sum = sum + i;
+    }
+    console.log(sum);
+  }
+summation(5) 
+
+
 #### Exercise 2:
 Create a program to get the sum of all the even numbers in a group
 
 ```
  summationEven(5) // should return 6 because 2+4=6
 ```
+
+function summationEven(number){
+  let num = number;
+  let sum = 0;
+  for(var i = 1; i <= num; i++){
+    if((i % 2) == 0){
+      sum = sum + i;
+    }
+  }
+  console.log(sum);
+}
+summationEven(5) 
 
  
 
@@ -28,9 +51,14 @@ Write a function that will tell you all of the words in an array that contain th
 ```
  wordsWithA(['cat', 'rabbit', 'dog', 'frog']) // should return ['cat', 'rabbit']
 ```
-var wordsWithA=['cat','rabbit', 'dog', 'frog']
-console.log(wordsWithA[0]);
-console.log(wordsWithA[1]);
+function wordsWithA(array){
+    for(i = 0; i < array.length; i++){
+      if(array[i].includes('a')){
+        console.log(array[i]);
+      }
+    }
+}
+wordsWithA(['cat', 'rabbit', 'dog', 'frog']); 
 
 
 
@@ -43,11 +71,9 @@ reverse("caterpillar") // should return "rallipretac"
 ```
 
 function reverse(letters){
-  
-  return letters.split('').reverse().join('');
-  
-}
-  console.log(reverse("caterpillar"));
+    return letters.split('').reverse().join('');
+  }
+console.log(reverse("caterpillar"));
 
 
 
@@ -56,6 +82,11 @@ function reverse(letters){
 
   ```
   addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
+
+  function addDashes(array){
+    console.log(array.join("-"));
+}
+addDashes(['test1', 'test2', 'test3'])
   ```
  ## Extra Practice Optional 6,7,8,9,10,11 
 #### Exercise 6:
