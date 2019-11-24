@@ -1,13 +1,22 @@
 //#### Exercise 1:
-// function nSum(arr) {
-//     return arr; 
+function nSum(arr) {
+    return arr; 
       
-
-// }
- // console.log(nSum([1 + 2 + 3+ 4 + 5]));
+}
+ console.log(nSum([1 + 2 + 3+ 4 + 5]));
 
   //#### Exercise 2:
-  
+ function summationEven(number){
+  let num = number;
+  let sum = 0;
+  for(var i = 1; i <= num; i++){
+    if((i % 2) == 0){
+      sum = sum + i;
+    }
+  }
+  console.log(sum);
+}
+summationEven(5) 
 
   //#### Exercise 3:
 
