@@ -30,18 +30,16 @@ function sumEven(num){
 // Write a function that will tell you all of the words in an array that contain the letter `a`
 
 function wordsWithA(array){
- var words = 0;
-   for (i = 0; i < words.length; i++){
-       if (words[0]== "cat"){
-           console.log(words)
-       }
+    var words = []
+      for (i = 0; i < array.length; i++){
+          if (array[i].search("a") != -1){
+              words.push(array[i])
+          }
+      }
+     return words
    }
- 
-}
-wordsWithA(words=["rabbit", "dog", "frog", "cat"])
-
-// var wordsWithA = ["cat", "rabbit", "dog", "frog"]
-//     if (wordsWithA.slice[] = "a")
+   console.log(wordsWithA(["rabbit", "dog", "frog", "cat"]))
+   
 
 
 ///E :4
