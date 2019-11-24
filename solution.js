@@ -36,8 +36,16 @@ console.log(total)
 #3
 
 ```
+let arr = ['apple','banana','orange','kiwi']
 
-
+var words = []
+for (let i = 0; i< arr.length ; ++i)
+  {
+    if (arr[i].indexOf('a')!== -1)
+      {words.push(arr[i]);}
+   
+  }
+ console.log(words)
 
 ```
 #4
@@ -59,7 +67,8 @@ reverseString('caterpillar');
 
 ```
 
-
+  var addDashes = ['black', 'white', 'yellow'];
+  console.log(addDashes.join('-'))
 
 
 

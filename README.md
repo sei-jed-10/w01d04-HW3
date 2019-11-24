@@ -43,7 +43,7 @@ reverse("caterpillar") // should return "rallipretac"
  Create a function that takes an array of words and combines them with a dash
 
   ```
-  addDashes(['test1', 'test2', 'test3']) // should return "test1-test2-test3"
+ addDashis
   ```
  ## Extra Practice Optional 6,7,8,9,10,11 
 #### Exercise 6:
